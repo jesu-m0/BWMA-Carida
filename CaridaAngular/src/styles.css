@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.bg-lime-green{
+  background-color: #80ED99;
+}
+
+.bg-palid-green{
+  background-color: #C7F9CC;
+}
+
+.bg-dark-green{
+  background-color: #57CC99;
+}
+
+.bg-blue{
+  background-color: #38A3A5;
+}
+
+.bg-dark-blue{
+  background-color: #22577A;
+}
+
+/*Link to the palete:
+https://coolors.co/palette/22577a-38a3a5-57cc99-80ed99-c7f9cc
+*/
