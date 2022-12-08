@@ -15,6 +15,8 @@ export class LoginPageComponent implements OnInit {
   constructor(private userService:UsersServiceService) { }
 
   ngOnInit() {
+    console.log("Sowing users: ");
+    this.userService.showUsers;
   }
 
   findUser():void{

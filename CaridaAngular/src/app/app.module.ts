@@ -12,14 +12,14 @@ import { IndexPageComponent } from './components/templates/IndexPage/IndexPage.c
 import { FooterComponent } from './components/simpleComponents/footer/footer.component';
 import { LoginPageComponent } from './components/templates/loginPage/loginPage.component';
 import { RegisterPageComponent } from './components/templates/registerPage/registerPage.component';
+import { UsersServiceService } from './services/UsersService.service';
+import { NewTripPageComponent } from './components/templates/newTripPage/newTripPage.component';
 
 const appRoutes: Routes=[
-
   {path:'', component: IndexPageComponent},
   {path:'login', component: LoginPageComponent},
-  {path:'register', component: RegisterPageComponent}
-
-
+  {path:'register', component: RegisterPageComponent},
+  {path:'newtrip', component: NewTripPageComponent}
 
 ]
 
@@ -30,7 +30,8 @@ const appRoutes: Routes=[
     NavarComponent,
     FooterComponent,
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    NewTripPageComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +40,7 @@ const appRoutes: Routes=[
     RouterModule.forRoot(appRoutes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [UsersServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

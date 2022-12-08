@@ -15,12 +15,17 @@ export class NavarComponent implements OnInit {
   constructor(private userService:UsersServiceService) { }
 
   ngOnInit() {
-    this.checkIfUserIsLoged();
+    //this.checkIfUserIsLoged();
+    this.isLoged = true;
+    this.userLoged = new User();
+    this.userLoged.email = 'oscar@frio.com';
+    this.userLoged.password = 'bufanda';
+    this.userLoged.name = 'Oscar';
   }
 
   checkIfUserIsLoged(){
     this.isLoged = this.userService.isLoged();
-    if(this.isLoged)this.userLoged = this.userService.userLoged;
+    //if(this.isLoged)this.userLoged = this.userService.userHasJustLoged;
     console.log('User loged: ' + this.isLoged);
   }
 
