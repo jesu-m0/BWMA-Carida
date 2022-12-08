@@ -11,6 +11,7 @@ import { NavarComponent } from './components/simpleComponents/navar/navar.compon
 import { IndexPageComponent } from './components/templates/IndexPage/IndexPage.component';
 import { FooterComponent } from './components/simpleComponents/footer/footer.component';
 import { LoginPageComponent } from './components/templates/loginPage/loginPage.component';
+import { DriverPageComponent } from './components/templates/driver-page/driver-page.component';
 
 const appRoutes: Routes=[
 
@@ -27,7 +28,8 @@ const appRoutes: Routes=[
     IndexPageComponent,
     NavarComponent,
     FooterComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    DriverPageComponent
   ],
   imports: [
     BrowserModule,
