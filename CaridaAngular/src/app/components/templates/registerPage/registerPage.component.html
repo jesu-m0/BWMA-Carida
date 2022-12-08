@@ -1,3 +1,45 @@
-<p>
-  registerPage works!
-</p>
+<div class="container bg-palid-green rounded shadow">
+  <p class="text-center fs-1 p-4 fw-bold">Create an account</p>
+
+  <form class="row pb-5">
+
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.name" aria-describedby="name">
+      </div>
+    </div>
+    <div class="col-4"></div>
+
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="user.email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+    </div>
+    <div class="col-4"></div>
+
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password">
+      </div>
+    </div>
+    <div class="col-4"></div>
+
+
+    <div class="col-4"></div>
+    <div class="col-4">
+      <input type="submit" class="btn btn-primary" value="Create" (click)="createUser()">
+    </div>
+    <div class="col-4"></div>
+
+  </form>
+
+
+
+</div>

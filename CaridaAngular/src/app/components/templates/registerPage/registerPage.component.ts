@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user.module';
+import { UsersServiceService } from 'src/app/services/UsersService.service';
 
 @Component({
   selector: 'app-registerPage',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterPageComponent implements OnInit {
 
-  constructor() { }
+  user:User = new User();
+
+  constructor(private userService:UsersServiceService) { }
 
   ngOnInit() {
+  }
+
+  createUser():void{
+    console.log(this.user);
+    this.userService.addUser(this.user);
   }
 
 }
