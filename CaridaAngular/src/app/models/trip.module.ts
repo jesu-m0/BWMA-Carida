@@ -1,8 +1,8 @@
 export class Trip{
 
-  start:string;
-  finish:string;
-  price:number;
+  start?:string;
+  finish?:string;
+  price?:number;
 
   //maybe we will add the cords in the future, not now.
 
