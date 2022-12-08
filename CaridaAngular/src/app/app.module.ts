@@ -10,10 +10,12 @@ import { AppComponent } from './app.component';
 import { NavarComponent } from './components/simpleComponents/navar/navar.component';
 import { IndexPageComponent } from './components/templates/IndexPage/IndexPage.component';
 import { FooterComponent } from './components/simpleComponents/footer/footer.component';
+import { LoginPageComponent } from './components/templates/loginPage/loginPage.component';
 
 const appRoutes: Routes=[
 
-  {path:'', component: IndexPageComponent}
+  {path:'', component: IndexPageComponent},
+  {path:'login', component: LoginPageComponent}
 
 
 
@@ -24,7 +26,8 @@ const appRoutes: Routes=[
     AppComponent,
     IndexPageComponent,
     NavarComponent,
-    FooterComponent
+    FooterComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
