@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user.module';
+import { UsersServiceService } from 'src/app/services/UsersService.service';
 
 @Component({
   selector: 'app-navar',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavarComponent implements OnInit {
 
-  constructor() { }
+  isLoged:boolean;
+  userLoged?:User;
+
+  constructor(private userService:UsersServiceService) { }
 
   ngOnInit() {
+    this.checkIfUserIsLoged();
+  }
+
+  checkIfUserIsLoged(){
+    this.isLoged = this.userService.isLoged();
+    if(this.isLoged)this.userLoged = this.userService.userLoged;
+    console.log('User loged: ' + this.isLoged);
   }
 
 }
