@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/user.module';
 
 @Component({
   selector: 'app-loginPage',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  user:User;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  findUser():void{
+    
   }
 
 }
