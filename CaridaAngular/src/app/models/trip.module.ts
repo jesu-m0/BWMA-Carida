@@ -1,10 +1,10 @@
 export class Trip{
 
-  start:string;
-  finish:string;
-  price:number;
-  date:Date;
-  hour:Date;
+  start?:string;
+  finish?:string;
+  price?:number;
+  date?:Date;
+  hour?:Date;
 
   //maybe we will add the cords in the future, not now.
 

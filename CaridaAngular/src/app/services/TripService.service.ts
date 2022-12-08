@@ -6,7 +6,7 @@ import { Trip } from '../models/trip.module';
 })
 export class TripServiceService {
 
-  trips:Trip[];
+  trips: Trip[] = [];
 
 constructor() { }
 
