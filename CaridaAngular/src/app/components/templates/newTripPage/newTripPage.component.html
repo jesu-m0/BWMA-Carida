@@ -1,60 +1,68 @@
 <div class="container bg-palid-green rounded shadow">
-  <p class="text-center fs-1 p-4 fw-bold">Log in</p>
+  <p class="text-center fs-1 p-4 fw-bold">Create a trip</p>
+  <p class="text-center fs-5 pb-4">Introduce the data about your trip down below</p>
 
   <form class="row pb-5">
-    
-  </form>
 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="container bg-palid-green rounded shadow">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-
-        <h2 class="fw-bold mb-2 text-center p-4">Create a trip</h2>
-        <p class="text-center fs-5 pb-4">Introduce the data about your trip down below</p>
-
-        <div class="col-6 form-outline form-white mb-4">
-            <label class="form-label" for="typeDateX">Date of the trip:</label>
-            <input type="date" id="typeDateX" class="form-control form-control-lg" />
-        </div>
-
-        <div class="col-6 form-outline form-white mb-4">
-            <label class="form-label" for="typeTimeX">Time of the trip:</label>
-            <input type="time" id="typeTimeX" class="form-control form-control-lg" />
-        </div>
-
-        <div class="col-md-8 col-lg-8 col-xl-8 form-outline form-white mb-4">
-            <label class="form-label" for="typeInitialX">Initial point:</label>
-            <input type="text" id="typeInitialX" class="form-control form-control-lg" />
-        </div>
-
-        <div class="col-md-8 col-lg-8 col-xl-8 form-outline form-white mb-4">
-            <label class="form-label" for="typeDestinationX">Destination:</label>
-            <input type="text" id="typeDestinationX" class="form-control form-control-lg" />
-        </div>
-
-        <div class="col-md-8 col-lg-8 col-xl-8 form-outline form-white mb-4 d-flex justify-content-center">
-            <label class="col-3 form-label" for="typePriceX">Price per passanger:</label>
-            <input type="number" id="typePriceX" class="form-control form-control-lg" />
-            <label class="form-label fs-1" for="typePriceX">€</label>
-        </div>
-
-        <button class="col-5 btn btn-outline-dark btn-lg px-5 mt-3 mb-5" type="submit">Create trip</button>
-
+    <div class="col-3"></div>
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="date" class="form-label fs-5">Select a day</label>
+        <input type="date" class="form-control" id="date" name="date">
+      </div>
     </div>
+    <div class="col-3">
+      <div class="mb-3">
+        <label for="hour" class="form-label fs-5">Select an hour</label>
+        <input type="time" class="form-control" id="hour" name="hour">
+      </div>
+    </div>
+    <div class="col-3"></div>
 
+
+
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="mb-3 row">
+        <label for="StartingPoint" class="col-sm-3 col-form-label fs-5">Starting point</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="StartingPoint" name = "StartingPoint">
+        </div>
+      </div>
+    </div>
+    <div class="col-3"></div>
+
+
+    <div class="col-3"></div>
+    <div class="col-6">
+      <div class="mb-3 row">
+        <label for="Destination" class="col-sm-3 col-form-label fs-5">Destination</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="Destination" name = "Destination">
+        </div>
+      </div>
+    </div>
+    <div class="col-3"></div>
+
+
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="mb-3 row">
+        <label for="price" class="col-sm-3 col-form-label fs-5">Price (€)</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" id="price" name = "price">
+        </div>
+      </div>
+    </div>
+    <div class="col-4"></div>
+
+
+    <div class="col-3"></div>
+    <div class="col-6">
+      <input type="submit" class="btn btn-primary mt-4" value="Create the trip">
+    </div>
+    <div class="col-3"></div>
+
+  </form>
 
 </div>
