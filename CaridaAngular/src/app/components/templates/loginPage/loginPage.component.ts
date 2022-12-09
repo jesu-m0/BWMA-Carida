@@ -15,13 +15,9 @@ export class LoginPageComponent implements OnInit {
   constructor(private userService:UsersServiceService) { }
 
   ngOnInit() {
-    console.log("Sowing users: ");
-    this.userService.showUsers;
   }
 
   findUser():void{
-    console.log("Sowing users: ");
-    this.userService.showUsers;
     this.userFinded = this.userService.findUser(this.user);
     if(this.userFinded == undefined){
       console.log('User do not exist')
@@ -30,6 +26,7 @@ export class LoginPageComponent implements OnInit {
       console.log('User loged!');
       console.log(this.userFinded);
     }
+    
   }
 
 }

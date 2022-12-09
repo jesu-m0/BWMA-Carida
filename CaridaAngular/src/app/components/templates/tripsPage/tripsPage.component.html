@@ -1,0 +1,12 @@
+<div class="container bg-palid-green rounded shadow">
+  <p class="text-center fs-1 p-4 fw-bold">Trips</p>
+</div>
+
+<div class="container">
+  
+  <ng-container *ngFor="let trip of trips">
+    <app-tripCard [trip]="trip"></app-tripCard>
+  </ng-container>
+
+</div>
+

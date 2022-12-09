@@ -5,12 +5,12 @@
   <nav class="navbar bg-lime-green">
     <div class="container">
         <div class="mt-3">
-          <a [routerLink]="['/']" ><img src="/assets/images/Carida-logoV2.png" alt="Carida Logo" height="50"></a>
+          <a routerLinkActive="active" [routerLink]="['/']" ><img src="/assets/images/Carida-logoV2.png" alt="Carida Logo" height="50" (click)="checkIfUserIsLoged()"></a>
         </div>
         <div class="">
 
-          <a class="btn btn-light mx-2 btn-sm" aria-current="page" href="/login">Login</a>
-          <a class="btn btn-light mx-2 btn-sm" aria-current="page" href="/register">Register</a>
+          <a class="btn btn-light mx-2 btn-sm" aria-current="page" routerLinkActive="active" [routerLink]="['/login']" (click)="checkIfUserIsLoged()">Login</a>
+          <a class="btn btn-light mx-2 btn-sm" aria-current="page" routerLinkActive="active" [routerLink]="['/register']">Register</a>
 
         </div>
     </div>
@@ -26,9 +26,9 @@
         </div>
         <div class="">
 
-          <a class="btn btn-light mx-2 btn-sm" aria-current="page" href="/trips">Trips</a>
-          <a class="btn btn-light mx-2 btn-sm" aria-current="page" href="/newtrip">Create a trip</a>
-          <a class="btn btn-light mx-2 btn-sm" aria-current="page" href="/mytrips">My trips</a>
+          <a class="btn btn-light mx-2 btn-sm" aria-current="page" routerLinkActive="active" [routerLink]="['/trips']">Trips</a>
+          <a class="btn btn-light mx-2 btn-sm" aria-current="page" routerLinkActive="active" [routerLink]="['/newtrip']">Create a trip</a>
+          <a class="btn btn-light mx-2 btn-sm" aria-current="page" routerLinkActive="active" [routerLink]="['/mytrips']">My trips</a>
 
 
         </div>

@@ -15,12 +15,15 @@ import { RegisterPageComponent } from './components/templates/registerPage/regis
 import { UsersServiceService } from './services/UsersService.service';
 import { NewTripPageComponent } from './components/templates/newTripPage/newTripPage.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { TripsPageComponent } from './components/templates/tripsPage/tripsPage.component';
+import { TripCardComponent } from './components/simpleComponents/tripCard/tripCard.component';
 
 const appRoutes: Routes=[
   {path:'', component: IndexPageComponent},
   {path:'login', component: LoginPageComponent},
   {path:'register', component: RegisterPageComponent},
-  {path:'newtrip', component: NewTripPageComponent}
+  {path:'newtrip', component: NewTripPageComponent},
+  {path:'trips', component: TripsPageComponent}
 
 ]
 
@@ -32,7 +35,9 @@ const appRoutes: Routes=[
     FooterComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    NewTripPageComponent
+    NewTripPageComponent,
+    TripsPageComponent,
+    TripCardComponent
   ],
   imports: [
     BrowserModule,
