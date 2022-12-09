@@ -16,10 +16,10 @@
       </ng-container>
     </div>
     <ng-container *ngIf="!booked">
-      <a href="#" class="btn btn-primary">Book a seat</a>
+      <a routerLinkActive="active" [routerLink]="['/mytrips']" class="btn btn-primary">Book a seat</a>
     </ng-container>
     <ng-container *ngIf="booked">
-      <a href="#" class="btn btn-danger">Cancel reservation</a>
+      <a routerLinkActive="active" [routerLink]="['/trips']" class="btn btn-danger">Cancel reservation</a>
     </ng-container>
   </div>
 </div>
