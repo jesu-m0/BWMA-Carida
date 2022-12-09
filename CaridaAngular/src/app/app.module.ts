@@ -14,6 +14,7 @@ import { LoginPageComponent } from './components/templates/loginPage/loginPage.c
 import { RegisterPageComponent } from './components/templates/registerPage/registerPage.component';
 import { UsersServiceService } from './services/UsersService.service';
 import { NewTripPageComponent } from './components/templates/newTripPage/newTripPage.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 const appRoutes: Routes=[
   {path:'', component: IndexPageComponent},
@@ -38,7 +39,8 @@ const appRoutes: Routes=[
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule
   ],
   providers: [UsersServiceService],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-//import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 
 @Component({
   selector: 'app-newTripPage',
@@ -12,12 +12,12 @@ export class NewTripPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  /*
+  
   @ViewChild(MapInfoWindow) infoWindow: MapInfoWindow | undefined;
 
-  center: google.maps.LatLngLiteral = {lat: 24, lng: 12};
-  markerPosition?: google.maps.LatLngLiteral;
-  zoom = 4;
+  center: google.maps.LatLngLiteral = {lat: 50.555809, lng: 9.680845};
+  markerPosition: google.maps.LatLngLiteral = {lat: 50.555809, lng: 9.680845};
+  zoom = 4.5;
   display: any;
 
   addMarker(event: google.maps.MapMouseEvent) {
@@ -30,7 +30,7 @@ export class NewTripPageComponent implements OnInit {
     this.infoWindow.open(marker);
     this.display = marker.getPosition()?.toJSON();
   }
-  */
+  
 
   public onOpenModal(mode: string): void {
     const container = document.getElementById('main-container');
