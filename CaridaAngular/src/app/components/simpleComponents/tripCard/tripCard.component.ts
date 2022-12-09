@@ -10,6 +10,7 @@ import { User } from 'src/app/models/user.module';
 export class TripCardComponent implements OnInit {
 
   @Input() trip:Trip;
+  @Input() booked:Boolean;
 
   constructor() { }
 

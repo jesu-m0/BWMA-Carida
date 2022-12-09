@@ -3,9 +3,9 @@
 </div>
 
 <div class="container">
-  
+
   <ng-container *ngFor="let trip of trips">
-    <app-tripCard [trip]="trip"></app-tripCard>
+    <app-tripCard [trip]="trip" [booked]="false"></app-tripCard>
   </ng-container>
 
 </div>

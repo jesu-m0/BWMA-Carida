@@ -17,13 +17,15 @@ import { NewTripPageComponent } from './components/templates/newTripPage/newTrip
 import { GoogleMapsModule } from '@angular/google-maps';
 import { TripsPageComponent } from './components/templates/tripsPage/tripsPage.component';
 import { TripCardComponent } from './components/simpleComponents/tripCard/tripCard.component';
+import { MyTripsPageComponent } from './components/templates/myTripsPage/myTripsPage.component';
 
 const appRoutes: Routes=[
   {path:'', component: IndexPageComponent},
   {path:'login', component: LoginPageComponent},
   {path:'register', component: RegisterPageComponent},
   {path:'newtrip', component: NewTripPageComponent},
-  {path:'trips', component: TripsPageComponent}
+  {path:'trips', component: TripsPageComponent},
+  {path:'mytrips', component: MyTripsPageComponent}
 
 ]
 
@@ -37,7 +39,8 @@ const appRoutes: Routes=[
     RegisterPageComponent,
     NewTripPageComponent,
     TripsPageComponent,
-    TripCardComponent
+    TripCardComponent,
+    MyTripsPageComponent
   ],
   imports: [
     BrowserModule,

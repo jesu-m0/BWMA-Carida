@@ -15,6 +15,11 @@
         <img src="/assets/images/user-gray.png" height="25">
       </ng-container>
     </div>
-    <a href="#" class="btn btn-primary">Book a seat</a>
+    <ng-container *ngIf="!booked">
+      <a href="#" class="btn btn-primary">Book a seat</a>
+    </ng-container>
+    <ng-container *ngIf="booked">
+      <a href="#" class="btn btn-danger">Cancel reservation</a>
+    </ng-container>
   </div>
 </div>
