@@ -19,10 +19,13 @@ export class NewTripPageComponent implements OnInit {
   markerPosition: google.maps.LatLngLiteral = {lat: 50.555809, lng: 9.680845};
   zoom = 4.5;
   display: any;
+  startingPoint: string = "";
 
   addMarker(event: google.maps.MapMouseEvent) {
     if(event.latLng != null)
     this.markerPosition = event.latLng.toJSON();
+    if (this.infoWindow != undefined)
+    this.infoWindow.close();
   }
 
   openInfoWindow(marker: MapMarker) {
@@ -30,7 +33,7 @@ export class NewTripPageComponent implements OnInit {
     this.infoWindow.open(marker);
     this.display = marker.getPosition()?.toJSON();
   }
-  
+
 
   public onOpenModal(mode: string): void {
     const container = document.getElementById('main-container');
@@ -46,6 +49,11 @@ export class NewTripPageComponent implements OnInit {
     }
     container?.appendChild(button);
     button.click();
+  }
+
+  public saveStartingPoint(): void {
+    this.startingPoint = this.markerPosition.lat + "; " + this.markerPosition.lng;
+    console.log(this.startingPoint);
   }
 
 }
