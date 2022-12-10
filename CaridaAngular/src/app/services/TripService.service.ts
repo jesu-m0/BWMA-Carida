@@ -49,7 +49,21 @@ export class TripServiceService {
       },
       "freeSeats":1,
       "occupiedSeats":4
-    }
+    },
+    {"start": "Fulda ZOB",
+        "finish": "Paris",
+        "price": 230,
+        //new Date ( year, month, date[, hour, minute, second, millisecond ]):
+        "date": new Date(2022,2,3,8,30),
+        "driver":
+        {
+          "email": "luka.modric@gmail.com",
+          "password" : "cr7thebest",
+          "name": "Luka Modric"
+        },
+        "freeSeats":2,
+        "occupiedSeats":3
+      }
   ];
 
 constructor() { }

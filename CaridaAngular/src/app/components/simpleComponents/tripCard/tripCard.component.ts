@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Trip } from 'src/app/models/trip.module';
 import { User } from 'src/app/models/user.module';
 import { TripServiceService } from 'src/app/services/TripService.service';
+import { UsersServiceService } from 'src/app/services/UsersService.service';
 
 @Component({
   selector: 'app-tripCard',
@@ -16,7 +17,7 @@ export class TripCardComponent implements OnInit {
   dateStr:String;
   hourStr:String;
 
-  constructor(private tripService:TripServiceService) { }
+  constructor(private tripService:TripServiceService, private userService:UsersServiceService) { }
 
   ngOnInit() {
     if(this.trip.driver?.name === undefined){
@@ -36,10 +37,15 @@ export class TripCardComponent implements OnInit {
 
   book(){
     //añadirlo a los trips de la persona, y en la pagina de todos los trips hacer que si los totales hay alguno que coincida con el de la persona que no se muestre
+    this.trip.freeSeats = +this.trip.freeSeats! - 1;
+    this.trip.occupiedSeats = +this.trip.occupiedSeats! + 1;
+    this.userService.addTripToUserLoged(this.trip);
   }
 
   cancel(){
-    //quitar el trip de la persona
+    this.trip.freeSeats = +this.trip.freeSeats! + 1;
+    this.trip.occupiedSeats = +this.trip.occupiedSeats! - 1;
+    this.userService.removeTripFromUserLoged(this.trip);
   }
 
 }

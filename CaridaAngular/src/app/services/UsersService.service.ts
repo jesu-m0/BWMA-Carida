@@ -72,8 +72,28 @@ export class UsersServiceService {
     UsersServiceService.userLoged = user;
   }
 
-  getUserTrips(): Trip[] | undefined{
-    return UsersServiceService.userLoged?.trips;
+getUserTrips(): Trip[]{
+  return UsersServiceService.userLoged?.trips || [];
+}
+
+addTripToUserLoged(trip:Trip): void{
+  UsersServiceService.userLoged?.trips?.push(trip);
+}
+
+removeTripFromUserLoged(trip:Trip): void{
+
+  let userTrips = UsersServiceService.userLoged?.trips || [];
+
+  let removeTrip = (removeTrip:Trip) => {
+    const res = userTrips.filter(obj => obj.start != removeTrip.start || obj.finish != removeTrip.finish
+      || obj.date?.getDate() != removeTrip.date?.getDate()
+      || obj.date?.getMonth() != removeTrip.date?.getMonth()
+      || obj.date?.getFullYear() != removeTrip.date?.getFullYear());
+    return res;
   }
+
+  UsersServiceService.userLoged!.trips=removeTrip(trip);
+
+}
 
 }
