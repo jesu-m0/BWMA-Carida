@@ -8,13 +8,13 @@
     <div class="col-3">
       <div class="mb-3">
         <label for="date" class="form-label fs-5">Select a day</label>
-        <input type="date" class="form-control" id="date" name="date">
+        <input type="date" class="form-control" id="date" name="date" [(ngModel)]="dateStr">
       </div>
     </div>
     <div class="col-3">
       <div class="mb-3">
         <label for="hour" class="form-label fs-5">Select an hour</label>
-        <input type="time" class="form-control" id="hour" name="hour">
+        <input type="time" class="form-control" id="hour" name="hour" [(ngModel)]="hourStr">
       </div>
     </div>
     <div class="col-3"></div>
@@ -26,7 +26,7 @@
       <div class="mb-3 row">
         <label for="StartingPoint" class="col-sm-3 col-form-label fs-5">Starting point</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="StartingPoint" name = "StartingPoint" value={{startingPoint}}>
+          <input type="text" class="form-control" id="StartingPoint" name = "StartingPoint" value={{startingPoint}} [(ngModel)]="newtrip.start">
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
       <div class="mb-3 row">
         <label for="Destination" class="col-sm-3 col-form-label fs-5">Destination</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control" id="Destination" name = "Destination">
+          <input type="text" class="form-control" id="Destination" name = "Destination" [(ngModel)]="newtrip.finish">
         </div>
       </div>
     </div>
@@ -58,7 +58,7 @@
       <div class="mb-3 row">
         <label for="price" class="col-sm-3 col-form-label fs-5">Price (€)</label>
         <div class="col-sm-9">
-          <input type="number" class="form-control" id="price" name = "price">
+          <input type="number" class="form-control" id="price" name = "price" [(ngModel)]="newtrip.price">
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@
 
     <div class="col-3"></div>
     <div class="col-6">
-      <input type="submit" class="btn btn-primary mt-4" value="Create the trip">
+      <input type="submit" class="btn btn-primary mt-4" value="Create the trip" (click)="createTrip()">
     </div>
     <div class="col-3"></div>
 

@@ -1,5 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { Router } from '@angular/router';
+import { Trip } from 'src/app/models/trip.module';
+import { TripServiceService } from 'src/app/services/TripService.service';
+import { UsersServiceService } from 'src/app/services/UsersService.service';
 
 @Component({
   selector: 'app-newTripPage',
@@ -8,11 +12,37 @@ import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 })
 export class NewTripPageComponent implements OnInit {
 
-  constructor() { }
+  newtrip:Trip = new Trip();
+  dateStr:String;
+  hourStr:String;
+
+  constructor(private tripService:TripServiceService, private router:Router, private userService:UsersServiceService) { }
 
   ngOnInit(): void {
   }
-  
+
+  createTrip(){
+
+    this.newtrip.date = new Date();
+
+    //With that we put the day of the trip
+    let dateSplit;
+    dateSplit = this.dateStr.split("-");
+    this.newtrip.date?.setFullYear(parseFloat(dateSplit[0]));
+    this.newtrip.date?.setMonth(parseFloat(dateSplit[1])-1);
+    this.newtrip.date?.setDate(parseFloat(dateSplit[2]));
+
+    let hourSplit = this.hourStr.split(":");
+    this.newtrip.date.setHours(parseFloat(hourSplit[0]));
+    this.newtrip.date.setMinutes(parseFloat(hourSplit[1]));
+    console.log(this.newtrip.date);
+
+    this.newtrip.driver = this.userService.userThatIsLoged();
+
+    this.tripService.addTrip(this.newtrip);
+    this.router.navigate(['/trips']);
+  }
+
   @ViewChild(MapInfoWindow) infoWindow: MapInfoWindow | undefined;
 
   center: google.maps.LatLngLiteral = {lat: 50.555809, lng: 9.680845};
@@ -43,7 +73,7 @@ export class NewTripPageComponent implements OnInit {
     button.setAttribute('data-bs-toggle', 'modal');
     if (mode === 'initial') {
       button.setAttribute('data-bs-target', '#addInitialMarkPointModal');
-    } 
+    }
     if (mode === 'destination') {
       button.setAttribute('data-bs-target', '#addDestinationMarkPointModal');
     }

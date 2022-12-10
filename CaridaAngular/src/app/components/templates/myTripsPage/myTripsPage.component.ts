@@ -19,8 +19,7 @@ export class MyTripsPageComponent implements OnInit {
         "finish": "Flughafen Frankfurt",
         "price": 15,
         //new Date ( year, month, date[, hour, minute, second, millisecond ]):
-        "date": "25/12/2022",
-        "hour": "15:30",
+        "date": new Date(2022,11,25,8,30),
         "driver":
         {
           "email": "luka.modric@gmail.com",
@@ -34,8 +33,7 @@ export class MyTripsPageComponent implements OnInit {
         "start": "Fulda",
         "finish": "Frankfurt",
         "price": 7,
-        "date": "28/12/2022",
-        "hour": "8:30",
+        "date": new Date(2022,11,28,15,30),
         "driver":
         {
           "email": "luka.modric@gmail.com",
@@ -49,8 +47,7 @@ export class MyTripsPageComponent implements OnInit {
         "start": "Fulda Hochschule",
         "finish": "Fulda Aschenberg",
         "price": 0.5,
-        "date": "25/12/2022",
-        "hour": "8:00",
+        "date": new Date(2023,0,10,7,45),
         "driver":
         {
           "email": "luka.modric@gmail.com",

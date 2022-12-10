@@ -18,6 +18,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { TripsPageComponent } from './components/templates/tripsPage/tripsPage.component';
 import { TripCardComponent } from './components/simpleComponents/tripCard/tripCard.component';
 import { MyTripsPageComponent } from './components/templates/myTripsPage/myTripsPage.component';
+import { TripServiceService } from './services/TripService.service';
 
 const appRoutes: Routes=[
   {path:'', component: IndexPageComponent},
@@ -50,7 +51,8 @@ const appRoutes: Routes=[
     HttpClientModule,
     GoogleMapsModule
   ],
-  providers: [UsersServiceService],
+  providers: [UsersServiceService,
+  TripServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
