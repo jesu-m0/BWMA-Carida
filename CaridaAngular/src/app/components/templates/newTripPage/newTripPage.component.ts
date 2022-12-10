@@ -17,6 +17,7 @@ export class NewTripPageComponent implements OnInit {
   newtrip:Trip = new Trip();
   dateStr:String;
   hourStr:String;
+  places:number;
 
   constructor(private tripService:TripServiceService, private router:Router, private userService:UsersServiceService, private geocodingService: GeocodingService) { }
 
@@ -41,6 +42,8 @@ export class NewTripPageComponent implements OnInit {
 
     this.newtrip.driver = this.userService.userThatIsLoged();
 
+    this.newtrip.freeSeats = this.places-1;
+    this.newtrip.occupiedSeats = 1;
     this.tripService.addTrip(this.newtrip);
     this.router.navigate(['/trips']);
   }
