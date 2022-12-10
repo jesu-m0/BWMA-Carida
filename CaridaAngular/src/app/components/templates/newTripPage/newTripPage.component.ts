@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { GeocoderResponse } from 'src/app/models/geocoder-response.module';
+import { GeocodingService } from 'src/app/services/Geocoding.service';
 
 @Component({
   selector: 'app-newTripPage',
@@ -8,7 +10,7 @@ import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 })
 export class NewTripPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private geocodingService: GeocodingService) { }
 
   ngOnInit(): void {
   }
@@ -52,8 +54,16 @@ export class NewTripPageComponent implements OnInit {
   }
 
   public saveStartingPoint(): void {
-    this.startingPoint = this.markerPosition.lat + "; " + this.markerPosition.lng;
-    console.log(this.startingPoint);
+
+    this.geocodingService.geocodeLatLng(this.markerPosition).then((response: GeocoderResponse) => {
+      if (response.status === 'OK' && response.results?.length) {
+        this.startingPoint = response.results[0].formatted_address;
+        console.log(this.startingPoint);
+      } else {
+        window.alert('No results found');
+      }
+    });
+
   }
 
 }

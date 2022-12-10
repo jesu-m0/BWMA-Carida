@@ -10,7 +10,6 @@ export class TripServiceService {
 
 constructor() { }
 
-
 addTrip(trip:Trip){
   this.trips.push(trip);
 }
