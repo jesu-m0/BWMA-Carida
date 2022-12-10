@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Trip } from '../models/trip.module';
 import { User } from '../models/user.module';
 
 @Injectable({
@@ -69,6 +70,10 @@ userThatIsLoged():User | undefined{
 userHasJustLoged(user:User|undefined):void{
   UsersServiceService.loged=true;
   UsersServiceService.userLoged = user;
+}
+
+getUserTrips(): Trip[] | undefined{
+  return UsersServiceService.userLoged?.trips;
 }
 
 }
