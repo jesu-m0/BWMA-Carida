@@ -40,6 +40,9 @@ export class NewTripPageComponent implements OnInit {
     this.newtrip.date.setMinutes(parseFloat(hourSplit[1]));
     console.log(this.newtrip.date);
 
+    this.newtrip.start = this.startingPoint;
+    this.newtrip.finish = this.finishingPoint;
+
     this.newtrip.driver = this.userService.userThatIsLoged();
 
     this.newtrip.freeSeats = this.places-1;
@@ -52,9 +55,10 @@ export class NewTripPageComponent implements OnInit {
 
   center: google.maps.LatLngLiteral = {lat: 50.555809, lng: 9.680845};
   markerPosition: google.maps.LatLngLiteral = {lat: 50.555809, lng: 9.680845};
-  zoom = 4.5;
+  zoom = 6;
   display: any;
   startingPoint: string = "";
+  finishingPoint: string = "";
 
   addMarker(event: google.maps.MapMouseEvent) {
     if(event.latLng != null)
@@ -93,7 +97,20 @@ export class NewTripPageComponent implements OnInit {
         this.startingPoint = response.results[0].formatted_address;
         console.log(this.startingPoint);
       } else {
-        window.alert('No results found');
+        window.alert('No address found for that initial location');
+      }
+    });
+
+  }
+
+  public saveFinishingPoint(): void {
+
+    this.geocodingService.geocodeLatLng(this.markerPosition).then((response: GeocoderResponse) => {
+      if (response.status === 'OK' && response.results?.length) {
+        this.finishingPoint = response.results[0].formatted_address;
+        console.log(this.finishingPoint);
+      } else {
+        window.alert('No address found for that destination location');
       }
     });
 
