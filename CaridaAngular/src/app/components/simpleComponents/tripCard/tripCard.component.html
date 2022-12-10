@@ -1,7 +1,15 @@
 <div class="card m-5 shadow">
   <h5 class="card-header"><img src="/assets/images/user-logo.png" height="25">   {{drivername}}</h5>
   <div class="card-body">
-    <h5 class="card-title fs-3">From <a class="text-decoration-underline text-dark">{{trip.start}}</a> to <a class="text-decoration-underline text-dark">{{trip.finish}}</a></h5>
+    <div class="d-flex">
+      <h5 class="card-title fs-3">From <a class="text-decoration-underline text-dark">{{trip.start}}</a> to <a class="text-decoration-underline text-dark">{{trip.finish}}</a></h5>
+      <a class="btn btn-primary ms-auto" (click)="onOpenModal()" data-placement="top" data-original-title="Destination">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+      </a>
+    </div>
     <div class="d-flex justify-content-between">
       <p class="card-text fs-4">Day: {{dateStr}} at {{hourStr}}</p>
       <p class="fs-3 fw-bold">{{trip.price}}€</p>
@@ -21,5 +29,33 @@
     <ng-container *ngIf="booked">
       <a routerLinkActive="active" [routerLink]="['/trips']" class="btn btn-danger" (click)="cancel()">Cancel reservation</a>
     </ng-container>
+  </div>
+</div>
+
+<!-- Show MarkPoints Modal -->
+<div class="modal fade" id="{{'showMarkPointsModal' + trip.id}}" tabindex="-1" role="dialog" aria-labelledby="showMarkPointsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+       <div class="modal-header">
+          <h5 class="modal-title" id="showMarkPointsModalLabel">Showing the trip route in the map:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+       </div>
+       <div class="modal-body">
+          <google-map height="400px"
+              width="470px"
+              [center]="center"
+              [zoom]="zoom">
+          <map-marker *ngFor="let markerPosition of markerPositions"
+            [position]="markerPosition"
+            [options]="markerOptions"></map-marker>
+          <map-directions-renderer *ngIf="(directionsResults$ | async) as directionsResults"
+                           [directions]="directionsResults"></map-directions-renderer>
+          </google-map>
+       </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>

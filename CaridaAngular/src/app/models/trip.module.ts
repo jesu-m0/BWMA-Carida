@@ -2,6 +2,7 @@ import { User } from "./user.module";
 
 export class Trip{
 
+  id?:number;
   start?:string;
   finish?:string;
   price?:number;

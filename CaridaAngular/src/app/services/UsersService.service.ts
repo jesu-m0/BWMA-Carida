@@ -26,7 +26,12 @@ export class UsersServiceService {
           "name": "Luka Modric"
         },
         "freeSeats":2,
-        "occupiedSeats":3}
+        "occupiedSeats":3,
+        "startLatitude": 50.5640738,
+        "startLongitude": 9.6860573,
+        "finishLatitude": 48.8588336,
+        "finishLongitude": 2.2769952
+        }
       ]
     },
     {
