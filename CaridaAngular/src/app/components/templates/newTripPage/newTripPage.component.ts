@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { Trip } from 'src/app/models/trip.module';
 import { TripServiceService } from 'src/app/services/TripService.service';
 import { UsersServiceService } from 'src/app/services/UsersService.service';
+import { GeocoderResponse } from 'src/app/models/geocoder-response.module';
+import { GeocodingService } from 'src/app/services/Geocoding.service';
 
 @Component({
   selector: 'app-newTripPage',
@@ -16,7 +18,7 @@ export class NewTripPageComponent implements OnInit {
   dateStr:String;
   hourStr:String;
 
-  constructor(private tripService:TripServiceService, private router:Router, private userService:UsersServiceService) { }
+  constructor(private tripService:TripServiceService, private router:Router, private userService:UsersServiceService, private geocodingService: GeocodingService) { }
 
   ngOnInit(): void {
   }
@@ -82,8 +84,16 @@ export class NewTripPageComponent implements OnInit {
   }
 
   public saveStartingPoint(): void {
-    this.startingPoint = this.markerPosition.lat + "; " + this.markerPosition.lng;
-    console.log(this.startingPoint);
+
+    this.geocodingService.geocodeLatLng(this.markerPosition).then((response: GeocoderResponse) => {
+      if (response.status === 'OK' && response.results?.length) {
+        this.startingPoint = response.results[0].formatted_address;
+        console.log(this.startingPoint);
+      } else {
+        window.alert('No results found');
+      }
+    });
+
   }
 
 }
