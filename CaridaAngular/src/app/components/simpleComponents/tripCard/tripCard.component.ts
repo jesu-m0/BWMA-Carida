@@ -11,10 +11,16 @@ export class TripCardComponent implements OnInit {
 
   @Input() trip:Trip;
   @Input() booked:Boolean;
+  drivername:String;
 
   constructor() { }
 
   ngOnInit() {
+    if(this.trip.driver?.name === undefined){
+      this.drivername = "user_name";
+    }else{
+      this.drivername = this.trip.driver.name;
+    }
   }
 
 }

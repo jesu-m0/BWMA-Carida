@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user.module';
 import { UsersServiceService } from 'src/app/services/UsersService.service';
+import {Router} from "@angular/router"
 
 @Component({
   selector: 'app-navar',
@@ -12,10 +13,10 @@ export class NavarComponent implements OnInit {
   isLoged:boolean;
   userLoged?:User;
 
-  constructor(private userService:UsersServiceService) { }
+  constructor(private userService:UsersServiceService, private router:Router) { }
 
   ngOnInit() {
-    this.checkIfUserIsLoged2();
+    this.checkIfUserIsLoged();
   }
 
   checkIfUserIsLoged(){
@@ -36,6 +37,16 @@ export class NavarComponent implements OnInit {
 
 
     console.log('User loged: ' + this.isLoged);
+  }
+
+  checkIfUserIsLogedIndex(){
+    this.isLoged = this.userService.isLoged();
+    console.log(this.isLoged)
+    if(this.isLoged){
+      this.userLoged = this.userService.userThatIsLoged();
+    }
+    console.log('User loged: ' + this.isLoged);
+    this.router.navigate(['/']);
   }
 
 }

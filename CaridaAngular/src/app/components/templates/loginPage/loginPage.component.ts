@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user.module';
 import { UsersServiceService } from 'src/app/services/UsersService.service';
+import {Router} from "@angular/router"
 
 @Component({
   selector: 'app-loginPage',
@@ -12,7 +13,7 @@ export class LoginPageComponent implements OnInit {
   user:User = new User();
   userFinded?:User;
 
-  constructor(private userService:UsersServiceService) { }
+  constructor(private userService:UsersServiceService, private router:Router) { }
 
   ngOnInit() {
   }
@@ -25,8 +26,9 @@ export class LoginPageComponent implements OnInit {
       this.userService.userHasJustLoged(this.userFinded);
       console.log('User loged!');
       console.log(this.userFinded);
+      this.router.navigate(['/']);
     }
-    
+
   }
 
 }

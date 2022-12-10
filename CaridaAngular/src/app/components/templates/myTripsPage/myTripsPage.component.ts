@@ -21,7 +21,12 @@ export class MyTripsPageComponent implements OnInit {
         //new Date ( year, month, date[, hour, minute, second, millisecond ]):
         "date": "25/12/2022",
         "hour": "15:30",
-        "driverName": "Elom Musk",
+        "driver":
+        {
+          "email": "luka.modric@gmail.com",
+          "password" : "cr7thebest",
+          "name": "Luka Modric"
+        },
         "freeSeats":2,
         "occupiedSeats":3
       },
@@ -31,7 +36,12 @@ export class MyTripsPageComponent implements OnInit {
         "price": 7,
         "date": "28/12/2022",
         "hour": "8:30",
-        "driverName": "Michael Jackson",
+        "driver":
+        {
+          "email": "luka.modric@gmail.com",
+          "password" : "cr7thebest",
+          "name": "Luka Modric"
+        },
         "freeSeats":3,
         "occupiedSeats":2
       },
@@ -41,7 +51,12 @@ export class MyTripsPageComponent implements OnInit {
         "price": 0.5,
         "date": "25/12/2022",
         "hour": "8:00",
-        "driverName": "Luka Modric",
+        "driver":
+        {
+          "email": "luka.modric@gmail.com",
+          "password" : "cr7thebest",
+          "name": "Luka Modric"
+        },
         "freeSeats":1,
         "occupiedSeats":4
       }
