@@ -6,7 +6,34 @@ import { User } from '../models/user.module';
 })
 export class UsersServiceService {
 
-  public static users:User[] = [];
+  public static users:User[] = [
+    {
+      "email":"jesusmd2000@gmail.com",
+      "password":"1234",
+      "name":"Jesús Moreno",
+      "trips":
+      [
+        {"start": "Fulda ZOB",
+        "finish": "Paris",
+        "price": 230,
+        //new Date ( year, month, date[, hour, minute, second, millisecond ]):
+        "date": new Date(2022,2,3,8,30),
+        "driver":
+        {
+          "email": "luka.modric@gmail.com",
+          "password" : "cr7thebest",
+          "name": "Luka Modric"
+        },
+        "freeSeats":2,
+        "occupiedSeats":3}
+      ]
+    },
+    {
+      "email":"linten@gmail.com",
+      "password":"1234",
+      "name":"Luis Miguel Garcia"
+    }
+  ];
   public static loged:boolean = false;
   public static userLoged: User | undefined;
 

@@ -15,9 +15,9 @@ export class TripsPageComponent implements OnInit {
   constructor(private tripService:TripServiceService) { }
 
   ngOnInit() {
-    
 
     this.trips = this.tripService.getTrips();
+    //comparar todos los trips y quitar los que coinciden con el de la persona logeada 
   }
 
 }

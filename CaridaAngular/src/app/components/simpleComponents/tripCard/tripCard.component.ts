@@ -34,4 +34,12 @@ export class TripCardComponent implements OnInit {
     }
   }
 
+  book(){
+    //añadirlo a los trips de la persona, y en la pagina de todos los trips hacer que si los totales hay alguno que coincida con el de la persona que no se muestre
+  }
+
+  cancel(){
+    //quitar el trip de la persona
+  }
+
 }
