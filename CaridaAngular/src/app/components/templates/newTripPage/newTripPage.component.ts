@@ -41,7 +41,11 @@ export class NewTripPageComponent implements OnInit {
     console.log(this.newtrip.date);
 
     this.newtrip.start = this.startingPoint;
+    this.newtrip.startLatitude = this.startingPointLat;
+    this.newtrip.startLongitude = this.startingPointLng;
     this.newtrip.finish = this.finishingPoint;
+    this.newtrip.finishLatitude = this.finishingPointLat;
+    this.newtrip.finishLongitude = this.finishingPointLng;
 
     this.newtrip.driver = this.userService.userThatIsLoged();
 
@@ -58,7 +62,11 @@ export class NewTripPageComponent implements OnInit {
   zoom = 6;
   display: any;
   startingPoint: string = "";
+  startingPointLat: number = 0;
+  startingPointLng: number = 0;
   finishingPoint: string = "";
+  finishingPointLat: number = 0;
+  finishingPointLng: number = 0;
 
   addMarker(event: google.maps.MapMouseEvent) {
     if(event.latLng != null)
@@ -95,6 +103,8 @@ export class NewTripPageComponent implements OnInit {
     this.geocodingService.geocodeLatLng(this.markerPosition).then((response: GeocoderResponse) => {
       if (response.status === 'OK' && response.results?.length) {
         this.startingPoint = response.results[0].formatted_address;
+        this.startingPointLat = this.markerPosition.lat;
+        this.startingPointLng = this.markerPosition.lng;
         console.log(this.startingPoint);
       } else {
         window.alert('No address found for that initial location');
@@ -108,6 +118,8 @@ export class NewTripPageComponent implements OnInit {
     this.geocodingService.geocodeLatLng(this.markerPosition).then((response: GeocoderResponse) => {
       if (response.status === 'OK' && response.results?.length) {
         this.finishingPoint = response.results[0].formatted_address;
+        this.finishingPointLat = this.markerPosition.lat;
+        this.finishingPointLng = this.markerPosition.lng;
         console.log(this.finishingPoint);
       } else {
         window.alert('No address found for that destination location');
