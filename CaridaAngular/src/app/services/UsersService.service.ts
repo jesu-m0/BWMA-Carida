@@ -32,7 +32,8 @@ export class UsersServiceService {
     {
       "email":"linten@gmail.com",
       "password":"1234",
-      "name":"Luis Miguel Garcia"
+      "name":"Luis Miguel Garcia",
+      "trips":[]
     }
   ];
   public static loged:boolean = false;

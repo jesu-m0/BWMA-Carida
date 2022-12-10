@@ -19,6 +19,7 @@ export class RegisterPageComponent implements OnInit {
 
   createUser():void{
     console.log(this.user);
+    this.user.trips = [];
     this.userService.addUser(this.user);
     this.router.navigate(['/login']);
   }
