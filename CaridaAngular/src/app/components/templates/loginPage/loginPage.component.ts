@@ -22,6 +22,7 @@ export class LoginPageComponent implements OnInit {
     this.userFinded = this.userService.findUser(this.user);
     if(this.userFinded == undefined){
       console.log('User do not exist')
+      alert('Incorrect user or password')
     }else{
       this.userService.userHasJustLoged(this.userFinded);
       console.log('User loged!');
