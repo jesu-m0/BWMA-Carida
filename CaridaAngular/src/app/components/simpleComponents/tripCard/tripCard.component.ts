@@ -15,6 +15,7 @@ export class TripCardComponent implements OnInit {
 
   @Input() trip:Trip;
   @Input() booked:Boolean;
+  yours:Boolean;
   drivername:String;
   dateStr:String;
   hourStr:String;
@@ -31,7 +32,7 @@ export class TripCardComponent implements OnInit {
   directionsResults$: Observable<google.maps.DirectionsResult|undefined>;
 
   constructor(private tripService:TripServiceService, private userService:UsersServiceService, private mapDirectionsService: MapDirectionsService) {
-    
+
    }
 
   ngOnInit() {
@@ -48,13 +49,13 @@ export class TripCardComponent implements OnInit {
       this.dateStr = this.trip.date.getDate() + "/" + (this.trip.date.getMonth()+1) + "/" + this.trip.date.getFullYear();
       this.hourStr = this.trip.date.getHours() + ":" + this.trip.date.getMinutes();
     }
-    
-    this.center = {lat: (this.trip.startLatitude) ? this.trip.startLatitude : 0, 
+
+    this.center = {lat: (this.trip.startLatitude) ? this.trip.startLatitude : 0,
                     lng: (this.trip.startLongitude) ? this.trip.startLongitude : 0};
 
     this.markerPositions.push(
-      {lat: (this.trip.startLatitude) ? this.trip.startLatitude : 0, 
-        lng: (this.trip.startLongitude) ? this.trip.startLongitude : 0}, 
+      {lat: (this.trip.startLatitude) ? this.trip.startLatitude : 0,
+        lng: (this.trip.startLongitude) ? this.trip.startLongitude : 0},
       {lat: (this.trip.finishLatitude) ? this.trip.finishLatitude : 0,
         lng: (this.trip.finishLongitude) ? this.trip.finishLongitude : 0}
       );
@@ -68,6 +69,12 @@ export class TripCardComponent implements OnInit {
       };
       this.directionsResults$ = this.mapDirectionsService.route(request)
       .pipe(map(response => response.result));
+
+      let userLoged:User | undefined;
+      userLoged = this.userService.userThatIsLoged();
+      if(userLoged?.email == this.trip.driver?.email && userLoged?.password == this.trip.driver?.password){
+        this.yours = true;
+      }
   }
 
   book(){
@@ -97,9 +104,9 @@ export class TripCardComponent implements OnInit {
     button.type = 'button';
     button.style.display = 'none';
     button.setAttribute('data-bs-toggle', 'modal');
-   
+
     button.setAttribute('data-bs-target', '#showMarkPointsModal' + this.trip.id);
- 
+
     container?.appendChild(button);
     button.click();
   }

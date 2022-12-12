@@ -23,12 +23,20 @@
         <img src="/assets/images/user-gray.png" height="25">
       </ng-container>
     </div>
-    <ng-container *ngIf="!booked">
-      <a routerLinkActive="active" [routerLink]="['/mytrips']" class="btn btn-primary" (click)="book()">Book a seat</a>
+
+    <ng-container *ngIf="!yours">
+      <ng-container *ngIf="!booked">
+        <a routerLinkActive="active" [routerLink]="['/mytrips']" class="btn btn-primary" (click)="book()">Book a seat</a>
+      </ng-container>
+      <ng-container *ngIf="booked">
+        <a routerLinkActive="active" [routerLink]="['/trips']" class="btn btn-danger" (click)="cancel()">Cancel reservation</a>
+      </ng-container>
     </ng-container>
-    <ng-container *ngIf="booked">
-      <a routerLinkActive="active" [routerLink]="['/trips']" class="btn btn-danger" (click)="cancel()">Cancel reservation</a>
+
+    <ng-container *ngIf="yours">
+      <button type="button" class="btn btn-secondary" disabled>Your trip</button>
     </ng-container>
+
   </div>
 </div>
 

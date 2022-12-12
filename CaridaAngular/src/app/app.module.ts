@@ -27,7 +27,6 @@ const appRoutes: Routes=[
   {path:'newtrip', component: NewTripPageComponent},
   {path:'trips', component: TripsPageComponent},
   {path:'mytrips', component: MyTripsPageComponent}
-
 ]
 
 @NgModule({

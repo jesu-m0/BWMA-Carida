@@ -10,8 +10,6 @@ export class Trip{
   driver?:User;
   freeSeats?:Number;
   occupiedSeats?:Number;
-
-  //maybe we will add the cords in the future, not now.
   startLatitude?:number;
   startLongitude?:number;
   finishLatitude?:number;
