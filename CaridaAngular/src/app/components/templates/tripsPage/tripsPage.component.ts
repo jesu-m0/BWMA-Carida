@@ -20,11 +20,8 @@ export class TripsPageComponent implements OnInit {
     this.trips = this.tripService.getTrips();
     let allTrips = this.trips;
     // Compare all the trips and remove the ones that match the one of the logged in person
-    console.log("alltrips:")
-    console.log(allTrips)
-    console.log("userTrips:")
     let userTrips = this.userService.getUserTrips();
-    console.log(userTrips)
+
 
     // Returns the list without the given trip
     let removeTrip = (removeTrip:Trip) => {
@@ -40,10 +37,8 @@ export class TripsPageComponent implements OnInit {
         && tripToFind.date?.getDate()==trip.date?.getDate()
         && tripToFind.date?.getMonth()==trip.date?.getMonth()
         && tripToFind.date?.getFullYear()==trip.date?.getFullYear());
-      console.log(e != null);
       if(e != null){
         allTrips = removeTrip(trip);
-        console.log(allTrips)
       }
     }
 
