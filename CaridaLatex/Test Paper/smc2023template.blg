@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: smc2023template.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: smc2023bib.bib
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 18 entries,
+            4024 wiz_defined-function locations,
+            922 strings with 10614 characters,
+and the built_in function-call counts, 12660 in all, are:
+= -- 1023
+> -- 300
+< -- 94
++ -- 159
+- -- 54
+* -- 594
+:= -- 1930
+add.period$ -- 37
+call.type$ -- 18
+change.case$ -- 16
+chr.to.int$ -- 213
+cite$ -- 18
+duplicate$ -- 934
+empty$ -- 1057
+format.name$ -- 67
+if$ -- 2915
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 159
+newline$ -- 79
+num.names$ -- 18
+pop$ -- 383
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 996
+stack$ -- 0
+substring$ -- 534
+swap$ -- 724
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 18
+warning$ -- 0
+while$ -- 61
+width$ -- 20
+write$ -- 190
