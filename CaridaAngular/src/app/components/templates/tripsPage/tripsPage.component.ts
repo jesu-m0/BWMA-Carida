@@ -20,6 +20,7 @@ export class TripsPageComponent implements OnInit {
     this.trips = this.tripService.getTrips();
     let allTrips = this.trips;
     //comparar todos los trips y quitar los que coinciden con el de la persona logeada
+    // Compare all the trips and remove the ones 
     console.log("alltrips:")
     console.log(allTrips)
     console.log("userTrips:")
