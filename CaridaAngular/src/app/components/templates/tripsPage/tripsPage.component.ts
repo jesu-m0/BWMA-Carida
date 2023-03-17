@@ -19,15 +19,14 @@ export class TripsPageComponent implements OnInit {
 
     this.trips = this.tripService.getTrips();
     let allTrips = this.trips;
-    //comparar todos los trips y quitar los que coinciden con el de la persona logeada
-    // Compare all the trips and remove the ones 
+    // Compare all the trips and remove the ones that match the one of the logged in person
     console.log("alltrips:")
     console.log(allTrips)
     console.log("userTrips:")
     let userTrips = this.userService.getUserTrips();
     console.log(userTrips)
 
-    //Devuelve la lista sin el trip deseado
+    // Returns the list without the given trip
     let removeTrip = (removeTrip:Trip) => {
       const res = allTrips.filter(obj => obj.start != removeTrip.start || obj.finish != removeTrip.finish
         || obj.date?.getDate() != removeTrip.date?.getDate()
