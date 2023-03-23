@@ -163,19 +163,42 @@
   
 
   \subsection{How to create a project}
+  In order to create a project in Angular you need to follow these steps:
+  \begin{enumerate}
+    \item Install a code editor. To edit the project, you need to have a code editor installed on your system. Visual Studio Code is a good option as it has extensions to facilitate development in Angular.
+  \item Install Node.js and npm. Angular uses Node.js and npm as package managers. Hence, you need to have them installed on your system.
+  \item Install the Angular client. To install the Angular client, use the command line tool and run this command: \verb|npm install -g @angular/cli|. It will install the Angular client globally on your system.
+  \item Create a new project. To create a new project, execute: \verb|npm new [project-name]|. This command creates a new folder with the name of your project and generates the basic structure of the project in it.
+  \item Run the project. Navigate to the project folder using the command \verb|cd [project-name]| and then execute the following command: \verb|ng serve -o|. This command compiles the project and starts it in your default browser, allowing you to see the changes in real-time as you make them.
+  \end{enumerate}
 
 
+  \section{State of the Art}
+  \label{sec:state_of_the_art}
+
+\subsection{Angular vs React}
+
+Angular and React are both popular JavaScript frameworks used for building web applications. Differences:
+
+\begin{itemize}
+  \item Flexibility: React is known for its flexibility, giving developers more freedom to structure their projects and choose their preferred syntax. It also allows the use of different complementary technologies. Angular, on the other hand, offers a stricter project structure and syntax that can be beneficial for novice developers or large teams needing to follow a defined standard.
+  \item Origin: Google develops and maintains Angular, while Facebook is responsible for React.
+  \item Typing: Angular uses Typescript, a typed programming language that provides greater security and ease of maintenance for large projects. React, on the other hand, only requires JavaScript and JSX for component creation.
+  \item Templates: Angular uses HTML templates for component creation, which can be beneficial for web designers and make it easier to create reusable components. In contrast, React uses JSX, a JavaScript extension that allows for component creation with a syntax similar to HTML.
+  \item Data binding: Angular allows for bidirectional data binding, where changes to the data model are automatically reflected in the view. React, however, uses unidirectional data binding, requiring changes in the data model to be explicitly passed to the view using props.
+\end{itemize}
 
 
+\subsection{Angular information sources}
+Learn Angular is not difficult at all. There are several sources where you can learn. 
 
+YouTube is a great resource for finding channels that offer tutorials for beginners. For example, 'Amigos Code' provides straightforward tutorials that are easy to follow. 'FreeCodeCamp.org' and 'Traversy Media' are also excellent channels to check out. Additionally, using the search bar can help you find exactly what you need to learn.
 
+Always is a good option take courses in platforms like Udemy, Coursera or others similar.
 
+There are several resources available to developers looking for help with Angular. The official Angular documentation is a recommended source, as it provides comprehensive information about the framework. In addition, there are several forums such as 'Stack Overflow', 'Reddit' and 'Angular Discussions', where developers can ask specific questions and get answers from the community. These resources can be useful for troubleshooting, gathering information and learning best practices related to Angular development.
 
-
-
-
-
-
+\section{Methodology}  \label{sec:methodology}
 
 
 
@@ -189,8 +212,8 @@ In 2019, Google introduced Bidirectional Encoder Representations from Transforme
 \subsection{Our question}
 But does recurrent neural network propagation of information works similar as our brain does? We propose to look at brain activity of subjects reading naturalistic text as a source of additional information for interpreting neural networks. And to do this we use brain imaging recordings of subjects reading complex natural text to interpret word and sequence embeddings from 4 recent NLP models - ELMo, USE, BERT and Transformer-XL, and study how their representations differ across layer depth, context length, and attention type.
 
-\section{State of the Art}
-\label{sec:state_of_the_art}
+\section{Bla}
+\label{sec:bla}
 
 Most work investigating language in the brain has been done in a controlled experiment setup where two conditions are contrasted\cite{friederici2011brain}. These conditions typically vary in complexity (simple vs. complex sentences), in the presence or absence of a linguistic property (sentences vs. lists of words) or in the presence or absence of incongruities (e.g. semantic surprisal)\cite{friederici2011brain}. A few researchers instead use naturalistic stimulus such as stories\cite{brennan2012syntactic}. Some use predictive models of brain activity as a function of multi-dimensional features spaces describing the different properties of the stimulus\cite{wehbe2014simultaneously}.
 
@@ -199,7 +222,7 @@ A few previous works have used neural network representations as a source of fea
 There is also a little work that evaluates or improves NLP models through brain recordings. Søgaard\cite{sogaard2016evaluating} proposes to evaluate whether a word embedding contains cognition-relevant semantics by measuring how well they predict eye tracking data and fMRI recordings. Fyshe et al.\cite{fyshe2014interpretable} build a non-negative sparse embedding for individual words by constraining the embedding to also predict brain activity well and show that the new embeddings better align with behavioral measures of semantics.
 
 
-\section{Methodology}\label{sec:methodology}
+\section{adsfasdf}\label{sec:sdafdsda}
 
 We investigate how the representations of all four networks (ELMO, BERT, USE and T-XL) change as we provide varying lengths of context. We compute the representations x in each available intermediate layer ([1, 2] for ELMo; [1, 12] for BERT; the layer is the output embedding for USE; and [1, 19] for T-XL). We compute x for word w by passing the most recent k words through the network.
 

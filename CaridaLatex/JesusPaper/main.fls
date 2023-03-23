@@ -591,7 +591,6 @@ INPUT .\main.toc
 INPUT main.toc
 INPUT main.toc
 OUTPUT main.toc
-INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Users\jm89615\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
@@ -606,6 +605,7 @@ INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8c.vf
+INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT .\pycortex.png
 INPUT .\pycortex.png
