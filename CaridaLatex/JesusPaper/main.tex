@@ -200,6 +200,46 @@ There are several resources available to developers looking for help with Angula
 
 \section{Methodology}  \label{sec:methodology}
 
+An example of how Angular is applied in web application development is demonstrated through a carpooling application. This practical application enables users to share rides and travel together, offering a platform for posting routes and prices for others to join. The application is based on dummy data and is only implemented on the frontend.
+
+In the subsequent paragraphs, we will explore various sections of the Angular code written for the development of this carpooling application.
+
+\subsection*{app.module.ts}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.9\columnwidth]{figures/app.module.ts.png}
+  \caption{Declaration of appRoutes and NgModule with components and their corresponding routes.\label{fig:app.module.ts}}
+  \end{figure}
+
+  app.module.ts is used to define and configure the application's components, services, and dependencies. It is the root module of an Angular application, and it sets up the dependency injection system, which is used to provide instances of services and other dependencies to components and other parts of the application.
+
+  In the Figure \ref{fig:app.module.ts}, the appRoutes array defines the routes for the application and maps each path to a corresponding component. When a user navigates to a path in the application, Angular uses the defined routes to determine which component to render. For example, the IndexPageComponent is associated with the root path (''), while the LoginPageComponent is associated with the 'login' path. 
+  
+  The @NgModule decorator is used to define the metadata for the root module of the application. The declarations property is an array of components that belong to the module. The imports property is an array of other modules used in the application. The providers property is an array of services that will be at the application.
+
+  \subsection*{Models}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\columnwidth]{figures/user.module.ts.png}
+    \caption{User class created in Angular.\label{fig:user.module.ts}}
+    \end{figure}
+    
+    In Angular we use models to define objects and we use this models in the aplication. In the Figure \ref{fig:user.module.ts} we can see how we define a user in Carida. The class has a constructor method tho initialize the properties of the objects.
+
+    In Carida we also define the model Trip which has the properties: id, start, finish, price, date, driver, freeSeats, occupiedSeats, startLatitude, startLongitude, finishLatitude, and finishLongitude. The definition of this model is pretty similar to the model user.
+
+    
+    \subsection*{Services}
+
+  
+
+    
+
+
+
+
 
 
 

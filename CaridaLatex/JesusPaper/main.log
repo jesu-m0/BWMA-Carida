@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.17)  23 MAR 2023 09:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.17)  23 MAR 2023 11:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -360,43 +360,58 @@ Overfull \hbox (0.54543pt too wide) in paragraph at lines 186--187
  []
 
 [2]
-Overfull \hbox (2.67523pt too wide) in paragraph at lines 210--212
+<figures/app.module.ts.png, id=154, 1029.8475pt x 1559.8275pt>
+File: figures/app.module.ts.png Graphic file (type png)
+<use figures/app.module.ts.png>
+Package pdftex.def Info: figures/app.module.ts.png  used on input line 211.
+(pdftex.def)             Requested size: 209.9799pt x 318.02924pt.
+<figures/user.module.ts.png, id=157, 911.405pt x 915.42pt>
+File: figures/user.module.ts.png Graphic file (type png)
+<use figures/user.module.ts.png>
+Package pdftex.def Info: figures/user.module.ts.png  used on input line 225.
+(pdftex.def)             Requested size: 186.65077pt x 187.46675pt.
+
+Overfull \hbox (4.39445pt too wide) in paragraph at lines 231--232
+\OT1/ptm/m/n/10 oc-cu-pied-Seats, start-Lat-i-tude, start-Lon-gi-tude, fin-ish-Lat-i-tude,
+ []
+
+
+Overfull \hbox (2.67523pt too wide) in paragraph at lines 250--252
 \OT1/ptm/m/n/10 ef-fi-ciently, re-sult-ing in vastly im-proved ac-cu-ra-cies. In 2019,
  []
 
 
-Overfull \hbox (10.79451pt too wide) in paragraph at lines 210--212
+Overfull \hbox (10.79451pt too wide) in paragraph at lines 250--252
 \OT1/ptm/m/n/10 Trans-former ar-chi-tec-ture. Straight-away BERT helped achieve
  []
 
-
-Overfull \hbox (2.7351pt too wide) in paragraph at lines 227--228
+[3 <./figures/app.module.ts.png> <./figures/user.module.ts.png>]
+Overfull \hbox (2.7351pt too wide) in paragraph at lines 267--268
 \OT1/ptm/m/n/10 (ELMO, BERT, USE and T-XL) change as we pro-vide vary-
  []
 
-[3]
-<pycortex.png, id=191, 555.2745pt x 268.6035pt>
+<pycortex.png, id=194, 555.2745pt x 268.6035pt>
 File: pycortex.png Graphic file (type png)
 <use pycortex.png>
-Package pdftex.def Info: pycortex.png  used on input line 241.
+Package pdftex.def Info: pycortex.png  used on input line 281.
 (pdftex.def)             Requested size: 256.64526pt x 124.14929pt.
 
-Overfull \hbox (23.33267pt too wide) in paragraph at lines 241--242
+Overfull \hbox (23.33267pt too wide) in paragraph at lines 281--282
  [][] 
  []
 
-[4 <./pycortex.png>]
-<figure.pdf, id=209, 130.4875pt x 91.34125pt>
+[4]
+<figure.pdf, id=212, 130.4875pt x 91.34125pt>
 File: figure.pdf Graphic file (type pdf)
 <use figure.pdf>
-Package pdftex.def Info: figure.pdf  used on input line 321.
+Package pdftex.def Info: figure.pdf  used on input line 361.
 (pdftex.def)             Requested size: 139.98897pt x 97.9934pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 328.
+(Font)              <8> on input line 368.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 328.
-
-Overfull \hbox (2.37585pt too wide) in paragraph at lines 335--337
+(Font)              <6> on input line 368.
+ [5 <./pycortex.png> <./figure.pdf>]
+Overfull \hbox (2.37585pt too wide) in paragraph at lines 375--377
 []\OT1/ptm/m/n/10 Reference num-bers in the text should ap-pear within square
  []
 
@@ -410,25 +425,23 @@ Underfull \hbox (badness 4266) in paragraph at lines 29--31
 \OT1/ptm/m/n/10 Re-cur-rent neu-ral net-work en-hanced trans-former,''
  []
 
-[5 <./figure.pdf>]) [6
-
-] (main.aux)
+) [6] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3BAE991F57F476E1B7365E2CA64621C5;4144.
  )
 (\end occurred when \ifx on line 40 was incomplete) 
 Here is how much of TeX's memory you used:
- 11069 strings out of 476339
- 180082 string characters out of 5787175
+ 11091 strings out of 476339
+ 180578 string characters out of 5787175
  1879340 words of memory out of 5000000
- 31273 multiletter control sequences out of 15000+600000
+ 31287 multiletter control sequences out of 15000+600000
  530872 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,76p,1080b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,76p,1080b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 201472 bytes).
+Output written on main.pdf (6 pages, 394817 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

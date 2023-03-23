@@ -7,7 +7,8 @@ export class User{
   password?:string;
   trips?:Trip[];
 
-  constructor(email?:string, password?:string, name?:string, trips?:Trip[]){
+  constructor(email?:string, password?:string, 
+    name?:string, trips?:Trip[]){
     this.email = email;
     this.password = password;
     this.name = name;

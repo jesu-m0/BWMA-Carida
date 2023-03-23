@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1679558551 "main.aux" "main.bbl" "main" 1679558554 0
+["bibtex main"] 1679567829 "main.aux" "main.bbl" "main" 1679567865 0
   "./IEEEtran.bst" 1679043498 59215 bc5380b3434a66b895bbc75d3d380540 ""
   "./smc2023bib.bib" 1679043498 6460 d3516bfce8628d1b49972bc1d88a644f ""
-  "main.aux" 1679558553 6854 1b2dab503077f731f3c370c2684ec5be "pdflatex"
+  "main.aux" 1679567865 7407 ad9c03d4b14c008e54721ca05bca8a87 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1679558552 "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" "main.pdf" "main" 1679558554 0
+["pdflatex"] 1679567863 "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" "main.pdf" "main" 1679567865 0
   "C:/Users/jm89615/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1679047523 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/jm89615/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1679047470 23176742 da2e89ac1c174ec3c778c373dfc90783 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -102,13 +102,15 @@
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657797096 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" 1679558549 25383 cc51205d4d4161e45c1aca266576502d ""
+  "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" 1679567862 28049 a05c4bdcc365b81a8a1848aa15915a36 ""
   "figure.pdf" 1679043498 2599 5e45c4c504c41bf5112f0754674646c7 ""
-  "main.aux" 1679558553 6854 1b2dab503077f731f3c370c2684ec5be "pdflatex"
-  "main.bbl" 1679558552 4804 f944efc464d0a5858212bf778f576a03 "bibtex main"
-  "main.out" 1679558553 4144 3bae991f57f476e1b7365e2ca64621c5 "pdflatex"
-  "main.tex" 1679558549 25383 cc51205d4d4161e45c1aca266576502d ""
-  "main.toc" 1679558553 2098 7067faa74de211aceadd8d01d2119ac8 "pdflatex"
+  "figures/app.module.ts.png" 1679563158 235959 71e907662a10ab41370fdee9f6339085 ""
+  "figures/user.module.ts.png" 1679563803 95102 5d9aec2a578596422d0f7bc709acf64d ""
+  "main.aux" 1679567865 7407 ad9c03d4b14c008e54721ca05bca8a87 "pdflatex"
+  "main.bbl" 1679567830 4804 f944efc464d0a5858212bf778f576a03 "bibtex main"
+  "main.out" 1679567865 4144 3bae991f57f476e1b7365e2ca64621c5 "pdflatex"
+  "main.tex" 1679567862 28049 a05c4bdcc365b81a8a1848aa15915a36 ""
+  "main.toc" 1679567865 2098 d4ad538edef4cba56ae90fb5774f52cf "pdflatex"
   "pycortex.png" 1679043498 52060 b761279d192dbacf7346dbfa96af29fb ""
   "smc.sty" 1679043498 5711 fe277d9243b4e0696b56e5408599680f ""
   (generated)

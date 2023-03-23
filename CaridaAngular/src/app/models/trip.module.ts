@@ -17,7 +17,8 @@ export class Trip{
 
   constructor(start?:string, finish?:string, price?:number, date?:Date,
     driver?:User, freeSeats?:Number, occupiedSeats?:Number,
-    startLatitude?:number, startLongitude?:number, finishLatitude?:number, finishLongitude?:number){
+    startLatitude?:number, startLongitude?:number, finishLatitude?:number, 
+    finishLongitude?:number){
     this.start = start;
     this.finish = finish;
     this.price = price;
