@@ -218,6 +218,15 @@ In the subsequent paragraphs, we will explore various sections of the Angular co
   
   The @NgModule decorator is used to define the metadata for the root module of the application. The declarations property is an array of components that belong to the module. The imports property is an array of other modules used in the application. The providers property is an array of services that will be at the application.
 
+  \subsection*{App Component}
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.5\columnwidth]{figures/app.component.html.png}
+      \caption{app.component.html file of Carida project.\label{fig:app.component.html.png}}
+      \end{figure}
+
+      In the Figure \ref{fig:app.component.html.png} we see template of the root component. It has a navbar and a footer and between that two it exist a component called 'router-outlet', it shows the specific component depending on the route defined on app.module.ts in the Figure \ref{fig:app.module.ts}
+
   \subsection*{Models}
 
   \begin{figure}[h]
@@ -233,9 +242,90 @@ In the subsequent paragraphs, we will explore various sections of the Angular co
     
     \subsection*{Services}
 
-  
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=1\columnwidth]{figures/TripService.service.ts.png}
+      \caption{Trip service with the methods that are implemented.\label{fig:TripService.service.ts.png}}
+      \end{figure}
+
+    In the Figure \ref{fig:TripService.service.ts.png} is shown the service that is used to manage the information related to the created trips. 
+
+    The annotation '@Injectable({ providedIn: 'root' })' indicates that only one instance of this service will be created and shared by the whole application.
+
+    The dummy data we have in the application is created and stored in the trips list. As there are 4 trips created at the beginning, the ID control starts at 5.
+
+    In the service we have also defined 3 methods that have been necessary to manage the information:
+
+    \begin{itemize}
+      \item 'addTrip(trip:Trip)': this method creates a trip by assigning it an id and adding it to the list. In a real situation this method would be in charge of sending the Trip to the backend and nothing else.
+      \item 'findTrip(trip:Trip): Trip | undefined': this method searches for a specific trip based on the departure and arrival points and returns the object or undefined if it does not exist.
+      \item 'getTrips(): Trip[]': all trips are returned.
+    \end{itemize}
+
+    In the project we use two more services, one dedicated to manage the users and the other to manage the map shown in the application.
+
+    \subsection*{Components}
+    
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=1\columnwidth]{figures/tripsPage.component.html.png}
+      \caption{HTML code of the trips page component.\label{fig:tripsPage.component.html.png}}
+      \end{figure}
+
+      In the Figure \ref{fig:tripsPage.component.html.png} we see the code of the page where we can see all the trips avaliable to book, the page resulting from this code can be seen in the Figure \ref{fig:trip page.png}. 
+
+      The first section of the code corresponds to the title of the page. Further down, we utilize the Angular syntax to implement a foreach loop that iterates over each trip in the trips list.
+
+      The trips list, which contains all the available trips for booking, is created in the tripsPage.component.ts file and is populated by the 'getTrips()' method of the service, as seen in Figure \ref{fig:TripService.service.ts.png}. 
+
+      The foreach loop generates cards for each trip, as shown in Figure \ref{fig:trip page.png}. We pass the trip data to the 'tripCard' component and set the 'booked' variable to false. If the variable were set to true, the button 'Book a seat' would appear in red with the text 'Cancel Reservation'.
 
     
+
+  \section{Results}\label{sec:results}
+    
+  Although Carida is not a functional application at the moment, the result of this project is a simple and intuitive website that makes car sharing easy for anyone.
+
+  Every user, trip or booking created during a sesion is deleted once the page is reloaded.
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=1\columnwidth]{figures/Main page.png}
+    \caption{Carida's main page.\label{fig:main page.png}}
+    \end{figure}
+
+    Figure \ref{fig:main page.png} displays the main page, which features a navbar that offers the options to Login or Register. A brief description of the page is also provided through a short text, along with two cards that showcase the various roles available to users.
+
+    The login and register sections have no special features.
+
+    Once a user is logged the buttons in the navbar change and allows you to go to avaliable trips sections, to create a trip and let you see your trips.
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=1\columnwidth]{figures/Trips page.png}
+    \caption{Page of Carida where you can see all the trips avaliable to book.\label{fig:trip page.png}}
+    \end{figure}
+
+    Figure \ref{fig:trip page.png} displays all available trips that can be booked by the user. These trips are the ones that have not been fully booked or booked by the user already. The available trip card provides information about the route, date, price, time, and available and booked seats. Furthermore, if the user clicks on the location button, a map will open as hte one on the Figure \ref{fig:map of route.png}, allowing them to view the exact point of the route.
+
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.5\columnwidth]{figures/Map of route.png}
+      \caption{Screen opened where you can see the route of a trip.\label{fig:map of route.png}}
+      \end{figure}
+
+    The 'Create a trip' section is a form that requires the user to input all necessary details about the trip they wish to create. Additionally, the starting and ending points can be manually specified on the map. The information given is validated using Angular validators.
+
+    The map that is used in Carida is providad by Google and let the user navigate throght it.
+
+    the 'My Trips' sections let the user check all the Trips he has booked and let him cancel them if necessary. The page is so similar to tha page seen in Figure \ref{fig:trip page.png} but the button 'Book a seat' is red with the text 'Cancel reservation'.
+    
+    Carida offers users a convenient and efficient way to discover and join trips, as well as cancel their reservation if necessary. Integration with Google Maps enables users to preview the trip route and evaluate if it meets their requirements before reserving a seat. This functionalities improves the overall user experience and expands the accessibility of car sharing.
+
+
+    \section{Discussion}\label{sec:discussion}
+
+
 
 
 

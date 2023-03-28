@@ -98,7 +98,8 @@ addTrip(trip:Trip){
 }
 
 findTrip(trip:Trip): Trip | undefined{
-  return this.trips.find(TripToFind => TripToFind.start == trip.start && TripToFind.finish == trip.finish);
+  return this.trips.find(TripToFind => TripToFind.start == trip.start 
+    && TripToFind.finish == trip.finish);
 }
 
 getTrips(): Trip[]{

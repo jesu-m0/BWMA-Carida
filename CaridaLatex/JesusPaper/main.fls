@@ -614,6 +614,13 @@ INPUT .\figures\app.module.ts.png
 INPUT .\figures\app.module.ts.png
 INPUT .\figures\app.module.ts.png
 INPUT .\figures\app.module.ts.png
+INPUT .\figures\app.component.html.png
+INPUT .\figures\app.component.html.png
+INPUT figures\app.component.html.png
+INPUT .\figures\app.component.html.png
+INPUT .\figures\app.component.html.png
+INPUT .\figures\app.component.html.png
+INPUT .\figures\app.component.html.png
 INPUT .\figures\user.module.ts.png
 INPUT .\figures\user.module.ts.png
 INPUT figures\user.module.ts.png
@@ -621,6 +628,41 @@ INPUT .\figures\user.module.ts.png
 INPUT .\figures\user.module.ts.png
 INPUT .\figures\user.module.ts.png
 INPUT .\figures\user.module.ts.png
+INPUT .\figures\TripService.service.ts.png
+INPUT .\figures\TripService.service.ts.png
+INPUT figures\TripService.service.ts.png
+INPUT .\figures\TripService.service.ts.png
+INPUT .\figures\TripService.service.ts.png
+INPUT .\figures\TripService.service.ts.png
+INPUT .\figures\TripService.service.ts.png
+INPUT .\figures\tripsPage.component.html.png
+INPUT .\figures\tripsPage.component.html.png
+INPUT figures\tripsPage.component.html.png
+INPUT .\figures\tripsPage.component.html.png
+INPUT .\figures\tripsPage.component.html.png
+INPUT .\figures\tripsPage.component.html.png
+INPUT .\figures\tripsPage.component.html.png
+INPUT .\figures\Main page.png
+INPUT .\figures\Main page.png
+INPUT figures\Main page.png
+INPUT .\figures\Main page.png
+INPUT .\figures\Main page.png
+INPUT .\figures\Main page.png
+INPUT .\figures\Main page.png
+INPUT .\figures\Trips page.png
+INPUT .\figures\Trips page.png
+INPUT figures\Trips page.png
+INPUT .\figures\Trips page.png
+INPUT .\figures\Trips page.png
+INPUT .\figures\Trips page.png
+INPUT .\figures\Trips page.png
+INPUT .\figures\Map of route.png
+INPUT .\figures\Map of route.png
+INPUT figures\Map of route.png
+INPUT .\figures\Map of route.png
+INPUT .\figures\Map of route.png
+INPUT .\figures\Map of route.png
+INPUT .\figures\Map of route.png
 INPUT .\pycortex.png
 INPUT .\pycortex.png
 INPUT pycortex.png
@@ -642,12 +684,12 @@ INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.t
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr7t.tfm
+INPUT .\main.bbl
+INPUT main.bbl
+INPUT .\main.bbl
+INPUT main.bbl
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT .\main.bbl
-INPUT main.bbl
-INPUT .\main.bbl
-INPUT main.bbl
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\jm89615\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
