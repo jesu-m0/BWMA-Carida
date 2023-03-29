@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1680012166 "main.aux" "main.bbl" "main" 1680012169 0
+["bibtex main"] 1680088475 "main.aux" "main.bbl" "main" 1680088479 0
   "./IEEEtran.bst" 1679047098 59215 bc5380b3434a66b895bbc75d3d380540 ""
-  "./smc2023bib.bib" 1679047098 6460 d3516bfce8628d1b49972bc1d88a644f ""
-  "main.aux" 1680012169 9282 2c13c089c429d80e0210acb4755c509e "pdflatex"
+  "./smc2023bib.bib" 1680088029 2252 41ead8c3be02e090bb626b0f0761ebef ""
+  "main.aux" 1680088478 5043 5927f8e3687833a59886d4960ae92abb "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1680012167 "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" "main.pdf" "main" 1680012169 0
+["pdflatex"] 1680088476 "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" "main.pdf" "main" 1680088479 0
   "C:/Users/jm89615/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1679051123 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/jm89615/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1679051070 23176742 da2e89ac1c174ec3c778c373dfc90783 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458477487 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -21,16 +21,6 @@
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri7t.tfm" 1136772254 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri8c.tfm" 1136772254 1428 3f135d3346fb7bfe71989ef2e19a9f01 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri8r.tfm" 1136772254 4640 532ca3305aad10cc01d769f3f91f1029 ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
-  "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb" 1136853348 44729 fea0975e20ec51c992338362f05f1146 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb" 1136853348 46026 687528a208fbfc1f00832bb96cccebbb ""
@@ -102,8 +92,7 @@
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576437552 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/jm89615/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" 1680012163 34357 2b125658cb88e702299a20072d369a35 ""
-  "figure.pdf" 1679047098 2599 5e45c4c504c41bf5112f0754674646c7 ""
+  "c:/Users/jm89615/Desktop/GitHub/BWMA-Carida/CaridaLatex/JesusPaper/main.tex" 1680088472 23292 9fb4afed6d7455f04d5391c9ba5c4d26 ""
   "figures/Main page.png" 1680009763 744867 403aa3b7480088098c557e4c7297d433 ""
   "figures/Map of route.png" 1680010782 223421 f024f8f9371ee102d5de7456828c433a ""
   "figures/TripService.service.ts.png" 1680006462 145202 4122294170869a2bbb8d9371424ffdab ""
@@ -112,12 +101,11 @@
   "figures/app.module.ts.png" 1679566758 235959 71e907662a10ab41370fdee9f6339085 ""
   "figures/tripsPage.component.html.png" 1680008066 83295 8324b69945b7294576157abdbed744c1 ""
   "figures/user.module.ts.png" 1679567403 95102 5d9aec2a578596422d0f7bc709acf64d ""
-  "main.aux" 1680012169 9282 2c13c089c429d80e0210acb4755c509e "pdflatex"
-  "main.bbl" 1680012167 4804 f944efc464d0a5858212bf778f576a03 "bibtex main"
-  "main.out" 1680012169 4381 47f1f5b2d81f19ee2d4ddd0e745362f6 "pdflatex"
-  "main.tex" 1680012163 34357 2b125658cb88e702299a20072d369a35 ""
-  "main.toc" 1680012169 2235 25843063adc09482222ddffa5e9fb707 "pdflatex"
-  "pycortex.png" 1679047098 52060 b761279d192dbacf7346dbfa96af29fb ""
+  "main.aux" 1680088478 5043 5927f8e3687833a59886d4960ae92abb "pdflatex"
+  "main.bbl" 1680088476 2279 ef5f21dfab2e0f8bd30bf370eeaa9788 "bibtex main"
+  "main.out" 1680088478 1696 18d6e929139d0240a7a504b058d9709f "pdflatex"
+  "main.tex" 1680088472 23292 9fb4afed6d7455f04d5391c9ba5c4d26 ""
+  "main.toc" 1680088478 880 e3fc128ac0c4614efad4acae437e4845 "pdflatex"
   "smc.sty" 1679047098 5711 fe277d9243b4e0696b56e5408599680f ""
   (generated)
   "main.aux"

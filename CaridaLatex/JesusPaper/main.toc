@@ -1,29 +1,12 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1.} Introduction}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1} What is Angular?}{1}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2} Features of Angular}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2} Features of Angular}{1}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3} How to create a project}{2}{subsection.1.3}%
 \contentsline {section}{\numberline {2.} State of the Art}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1} Angular vs React}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2} Angular information sources}{2}{subsection.2.2}%
-\contentsline {section}{\numberline {3.} Methodology}{3}{section.3}%
+\contentsline {section}{\numberline {3.} Methodology}{2}{section.3}%
 \contentsline {section}{\numberline {4.} Results}{4}{section.4}%
 \contentsline {section}{\numberline {5.} Discussion}{5}{section.5}%
-\contentsline {subsection}{\numberline {5.1} How to create a project}{5}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2} Our question}{5}{subsection.5.2}%
-\contentsline {section}{\numberline {6.} Bla}{5}{section.6}%
-\contentsline {section}{\numberline {7.} adsfasdf}{6}{section.7}%
-\contentsline {subsection}{\numberline {7.1} fMRI and MEG data}{6}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2} Encoding models}{6}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3} Evaluation of predictions}{6}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4} Proof of concept}{6}{subsection.7.4}%
-\contentsline {section}{\numberline {8.} Headings}{7}{section.8}%
-\contentsline {subsection}{\numberline {8.1} Second Level Headings}{7}{subsection.8.1}%
-\contentsline {subsubsection}{\numberline {8.1.1} Third Level Headings}{7}{subsubsection.8.1.1}%
-\contentsline {section}{\numberline {9.} Floats and equations}{7}{section.9}%
-\contentsline {subsection}{\numberline {9.1} Equations}{7}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2} Figures, Tables and Captions}{7}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3} Footnotes}{7}{subsection.9.3}%
-\contentsline {section}{\numberline {10.} Citations}{7}{section.10}%
-\contentsline {section}{\numberline {11.} Conclusions}{7}{section.11}%
-\contentsline {section}{\numberline {12.} References}{7}{section.12}%
+\contentsline {section}{\numberline {6.} References}{5}{section.6}%

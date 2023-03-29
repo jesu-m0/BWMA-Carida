@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.17)  28 MAR 2023 16:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.17)  29 MAR 2023 13:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -359,23 +359,30 @@ Overfull \hbox (0.54543pt too wide) in paragraph at lines 186--187
 \OT1/ptm/m/n/10 of main-te-nance for large projects. Re-act, on the other
  []
 
-[2]
-<figures/app.module.ts.png, id=164, 1029.8475pt x 1559.8275pt>
+<figures/app.module.ts.png, id=82, 1029.8475pt x 1559.8275pt>
 File: figures/app.module.ts.png Graphic file (type png)
 <use figures/app.module.ts.png>
 Package pdftex.def Info: figures/app.module.ts.png  used on input line 211.
 (pdftex.def)             Requested size: 209.9799pt x 318.02924pt.
-<figures/app.component.html.png, id=167, 606.265pt x 399.4925pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+<figures/app.component.html.png, id=102, 606.265pt x 399.4925pt>
 File: figures/app.component.html.png Graphic file (type png)
 <use figures/app.component.html.png>
 Package pdftex.def Info: figures/app.component.html.png  used on input line 224.
 (pdftex.def)             Requested size: 116.6563pt x 76.8675pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (4.40591pt too wide) in paragraph at lines 228--229
 \OT1/ptm/m/n/10 com-po-nent de-pend-ing on the route de-fined on app.module.ts
  []
 
-<figures/user.module.ts.png, id=170, 911.405pt x 915.42pt>
+<figures/user.module.ts.png, id=106, 911.405pt x 915.42pt>
 File: figures/user.module.ts.png Graphic file (type png)
 <use figures/user.module.ts.png>
 Package pdftex.def Info: figures/user.module.ts.png  used on input line 234.
@@ -385,104 +392,93 @@ Overfull \hbox (4.39445pt too wide) in paragraph at lines 240--241
 \OT1/ptm/m/n/10 oc-cu-pied-Seats, start-Lat-i-tude, start-Lon-gi-tude, fin-ish-Lat-i-tude,
  []
 
-[3 <./figures/app.module.ts.png> <./figures/app.component.html.png> <./figures/user.module.ts.png>]
-<figures/TripService.service.ts.png, id=185, 1266.7325pt x 1282.7925pt>
+<figures/TripService.service.ts.png, id=109, 1266.7325pt x 1282.7925pt>
 File: figures/TripService.service.ts.png Graphic file (type png)
 <use figures/TripService.service.ts.png>
 Package pdftex.def Info: figures/TripService.service.ts.png  used on input line 247.
 (pdftex.def)             Requested size: 233.31259pt x 236.2559pt.
-<figures/tripsPage.component.html.png, id=187, 1166.3575pt x 600.2425pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./figures/app.module.ts.png> <./figures/app.component.html.png> <./figures/user.module.ts.png>]
+<figures/tripsPage.component.html.png, id=127, 1166.3575pt x 600.2425pt>
 File: figures/tripsPage.component.html.png Graphic file (type png)
 <use figures/tripsPage.component.html.png>
 Package pdftex.def Info: figures/tripsPage.component.html.png  used on input line 271.
 (pdftex.def)             Requested size: 233.31259pt x 120.06468pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<figures/Main page.png, id=192, 942.52126pt x 673.01437pt>
+<figures/Main page.png, id=133, 942.52126pt x 673.01437pt>
 File: figures/Main page.png Graphic file (type png)
 <use figures/Main page.png>
 Package pdftex.def Info: figures/Main page.png  used on input line 293.
 (pdftex.def)             Requested size: 233.31259pt x 166.58954pt.
-[4 <./figures/TripService.service.ts.png> <./figures/tripsPage.component.html.png> <./figures/Main page.png>]
-<figures/Trips page.png, id=207, 942.52126pt x 672.26157pt>
+<figures/Trips page.png, id=135, 942.52126pt x 672.26157pt>
 File: figures/Trips page.png Graphic file (type png)
 <use figures/Trips page.png>
 Package pdftex.def Info: figures/Trips page.png  used on input line 305.
 (pdftex.def)             Requested size: 233.31259pt x 166.4032pt.
-<figures/Map of route.png, id=210, 367.3725pt x 414.79968pt>
+ [4 <./figures/TripService.service.ts.png> <./figures/tripsPage.component.html.png> <./figures/Main page.png> <./figures/Trips page.png>]
+<figures/Map of route.png, id=150, 367.3725pt x 414.79968pt>
 File: figures/Map of route.png Graphic file (type png)
 <use figures/Map of route.png>
 Package pdftex.def Info: figures/Map of route.png  used on input line 313.
 (pdftex.def)             Requested size: 116.6563pt x 131.71326pt.
-
-Overfull \hbox (2.67523pt too wide) in paragraph at lines 340--342
-\OT1/ptm/m/n/10 ef-fi-ciently, re-sult-ing in vastly im-proved ac-cu-ra-cies. In 2019,
+ (main.bbl
+Underfull \hbox (badness 2426) in paragraph at lines 25--27
+[]\OT1/ptm/m/n/10 ``Angular of-fi-cial site,'' [][]$https : / / angular . io / docs$[][], ac-
  []
 
 
-Overfull \hbox (10.79451pt too wide) in paragraph at lines 340--342
-\OT1/ptm/m/n/10 Trans-former ar-chi-tec-ture. Straight-away BERT helped achieve
- []
-
-[5 <./figures/Trips page.png> <./figures/Map of route.png>]
-Overfull \hbox (2.7351pt too wide) in paragraph at lines 357--358
-\OT1/ptm/m/n/10 (ELMO, BERT, USE and T-XL) change as we pro-vide vary-
- []
-
-<pycortex.png, id=247, 555.2745pt x 268.6035pt>
-File: pycortex.png Graphic file (type png)
-<use pycortex.png>
-Package pdftex.def Info: pycortex.png  used on input line 371.
-(pdftex.def)             Requested size: 256.64526pt x 124.14929pt.
-
-Overfull \hbox (23.33267pt too wide) in paragraph at lines 371--372
- [][] 
- []
-
-[6 <./pycortex.png>]
-<figure.pdf, id=263, 130.4875pt x 91.34125pt>
-File: figure.pdf Graphic file (type pdf)
-<use figure.pdf>
-Package pdftex.def Info: figure.pdf  used on input line 451.
-(pdftex.def)             Requested size: 139.98897pt x 97.9934pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 458.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 458.
-
-Overfull \hbox (2.37585pt too wide) in paragraph at lines 465--467
-[]\OT1/ptm/m/n/10 Reference num-bers in the text should ap-pear within square
- []
-
-(main.bbl
-Underfull \hbox (badness 3240) in paragraph at lines 25--27
-[]\OT1/ptm/m/n/10 K. S. Jones, ``Nat-u-ral lan-guage pro-cess-ing: an
+Underfull \hbox (badness 2689) in paragraph at lines 29--32
+[]\OT1/ptm/m/n/10 ``Angular Wikipedia site,'' [][]$https : / / en . wikipedia . org /
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 29--31
-\OT1/ptm/m/n/10 Re-cur-rent neu-ral net-work en-hanced trans-former,''
+Underfull \hbox (badness 1383) in paragraph at lines 34--36
+[]\OT1/ptm/m/n/10 ``Setting up the lo-cal en-vi-ron-ment and workspace
  []
 
-[7 <./figure.pdf>]) [8] (main.aux)
+
+Underfull \hbox (badness 1067) in paragraph at lines 38--41
+[]\OT1/ptm/m/n/10 ``Create a new An-gu-lar project,'' [][]$https : / / angular . io /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+[]\OT1/ptm/m/n/10 ``TraversyMedia Youtube chan-nel,'' [][]$https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+\OT1/ptm/m/n/10 / / www . youtube . com / @TraversyMedia$[][], ac-cessed:
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 60--63
+[]\OT1/ptm/m/n/10 L. M. G. Mar[]^^Pn and J. M. Dur[]an, ``Car Shar-ing
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 60--63
+\OT1/ptm/m/n/10 App (BWMA-Carida),'' [][]$https : / / github . com / jesu-[]m0 /
+ []
+
+) [5 <./figures/Map of route.png>] (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 47F1F5B2D81F19EE2D4DDD0E745362F6;4381.
+(rerunfilecheck)             Checksum: 18D6E929139D0240A7A504B058D9709F;1696.
  )
 (\end occurred when \ifx on line 40 was incomplete) 
 Here is how much of TeX's memory you used:
- 11155 strings out of 476339
- 182199 string characters out of 5787175
- 1880340 words of memory out of 5000000
- 31333 multiletter control sequences out of 15000+600000
- 530872 words of font info for 62 fonts, out of 8000000 for 9000
+ 11058 strings out of 476339
+ 180821 string characters out of 5787175
+ 1876340 words of memory out of 5000000
+ 31280 multiletter control sequences out of 15000+600000
+ 523117 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,76p,1080b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 1445471 bytes).
+ 75i,15n,76p,725b,519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jm89615/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 1335209 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 78 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
